@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>132</y>
+      <w>176</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>
+.__init__()
+-
+- initialize V_terminal
+- Create RC branches
+-Save all branches 
+ for later use
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>836</x>
+      <y>143</y>
+      <w>132</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>
+CircuitBranch0
+-
+Data: | R | C | V |</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>154</y>
+      <w>165</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;70.0;10.0;70.0;40.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>836</x>
+      <y>220</y>
+      <w>132</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>
+CircuitBranch1
+-
+Data: | R | C | V |</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>836</x>
+      <y>385</y>
+      <w>132</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>
+CircuitBranchN
+-
+Data: | R | C | V |</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>187</y>
+      <w>165</w>
+      <h>253</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;210.0;70.0;210.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>187</y>
+      <w>165</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;60.0;70.0;60.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>451</x>
+      <y>396</y>
+      <w>242</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>computeNextState()
+-
+input:
+Power draw at current time
+-
+- calculate current draw It=P/V
+- calulate teminal voltage Vt(It)
+- calculate branch voltage Vn(Vt)
+-
+save at each step: 
+- Terminal voltage
+- All branch voltages</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>748</x>
+      <y>99</y>
+      <w>253</w>
+      <h>539</h>
+    </coordinates>
+    <panel_attributes>
+CircuitBranch
+lt=.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>165</x>
+      <y>99</y>
+      <w>572</w>
+      <h>539</h>
+    </coordinates>
+    <panel_attributes>
+Circuit
+lt=.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>264</y>
+      <w>33</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>682</x>
+      <y>495</y>
+      <w>132</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>484</y>
+      <w>77</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>187</x>
+      <y>462</y>
+      <w>220</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>
+computeTerminalVoltage()
+-
+See readme doc for equation.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>891</x>
+      <y>297</y>
+      <w>22</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>.
+.
+.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>484</y>
+      <w>187</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>
+computeCapVoltage
+-
+Computes Vc(i)
+using dVc/dt = i/C
+and numerical integration 
+(forward euler)
+See also readme doc.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>209</x>
+      <y>308</y>
+      <w>165</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>
+reset()
+-
+Reset all voltages
+to their default V0-s</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>209</x>
+      <y>198</y>
+      <w>165</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>
+saveBranch()
+-
+Stores a circuitBranch
+to the circuits memory</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
