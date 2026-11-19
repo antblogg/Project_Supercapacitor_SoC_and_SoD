@@ -1,0 +1,1896 @@
+SIMULINK / SIMSCAPE MODEL REPORT
+========================================
+
+Model: RC_model
+Subsystem: RC_model/RC-parallel/Test1
+
+NUMBER OF BLOCKS: 46
+
+========================================
+BLOCK 1
+========================================
+Path:
+RC_model/RC-parallel/Test1
+
+Name: Test1
+Block type: SubSystem
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  ShowPortLabels = FromPortIcon
+  BlockChoice = 
+  TemplateBlock = 
+  MemberBlocks = 
+  Permissions = ReadWrite
+  ErrorFcn = 
+  PermitHierarchicalResolution = All
+  TreatAsAtomicUnit = off
+  ShowSubsystemReinitializePorts = off
+  MinAlgLoopOccurrences = off
+  ScheduleAs = Sample time
+  PartitionName = 
+  SystemSampleTime = -1
+  SetExecutionDomain = off
+  ExecutionDomainType = Deduce
+  RTWSystemCode = Auto
+  RTWFcnNameOpts = Auto
+  RTWFcnName = 
+  RTWFileNameOpts = Auto
+  RTWFileName = 
+  FunctionInterfaceSpec = void_void
+  FunctionWithSeparateData = off
+  RTWMemSecFuncInitTerm = Inherit from model
+  RTWMemSecFuncExecute = Inherit from model
+  RTWMemSecDataConstants = Inherit from model
+  RTWMemSecDataInternal = Inherit from model
+  RTWMemSecDataParameters = Inherit from model
+  IsSubsystemVirtual = on
+  Variant = off
+  VariantChoicesSpecifier = 
+  VariantChoicesEnumeration = 
+  VariantControlVariable = 
+  VariantChoices = []
+  VariantControlMode = expression
+  VariantControl = 
+  LabelModeActiveChoice = 
+  VariantActivationTime = update diagram
+  AllowZeroVariantControls = off
+  PropagateVariantConditions = off
+  AllowFlexibleInterface = on
+  TreatAsGroupedWhenPropagatingVariantConditions = on
+  ReferencedSubsystem = 
+  Latency = 0
+  AutoFrameSizeCalculation = off
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 2
+========================================
+Path:
+RC_model/RC-parallel/Test1/C0
+
+Name: C0
+Block type: SimscapeBlock
+Mask type: Capacitor
+Library source:
+ee_lib/Passive/Capacitor
+Link status: resolved
+
+PARAMETERS:
+  cap_option = ee.enum.passive.capacitor.capOption.const
+  cap_option_unit = 1
+  cap_option_conf = compiletime
+  c = C0
+  c_unit = F
+  c_conf = compiletime
+  Cvec = [1e-05, 1e-06]
+  Cvec_unit = F
+  Cvec_conf = compiletime
+  Vvec = [0, 10]
+  Vvec_unit = V
+  Vvec_conf = compiletime
+  CV_table_symmetry = ee.enum.passive.capacitor.tableSymmetry.yes
+  CV_table_symmetry_unit = 1
+  CV_table_symmetry_conf = compiletime
+  f_vec = [1, 10]
+  f_vec_unit = kHz
+  f_vec_conf = compiletime
+  DFext_vec = [.8, 1.2]
+  DFext_vec_unit = 1
+  DFext_vec_conf = compiletime
+  enable_C_tol = ee.enum.toleranceApplication.none
+  enable_C_tol_unit = 1
+  enable_C_tol_conf = compiletime
+  averaging_period = 0
+  averaging_period_unit = s
+  averaging_period_conf = compiletime
+  C_tol = 5
+  C_tol_unit = 1
+  C_tol_conf = compiletime
+  tol_distribution = ee.enum.toleranceDistribution.uniform
+  tol_distribution_unit = 1
+  tol_distribution_conf = compiletime
+  nSigma = 4
+  nSigma_unit = 1
+  nSigma_conf = compiletime
+  r = 0
+  r_unit = Ohm
+  r_conf = compiletime
+  g = 0
+  g_unit = 1/Ohm
+  g_conf = compiletime
+  enable_operating_limits = ee.enum.enable.no
+  enable_operating_limits_unit = 1
+  enable_operating_limits_conf = compiletime
+  operating_limit_action = ee.enum.passive.reportOpLim.warn
+  operating_limit_action_unit = 1
+  operating_limit_action_conf = compiletime
+  max_working_voltage_range = [-25, 25]
+  max_working_voltage_range_unit = V
+  max_working_voltage_range_conf = compiletime
+  power_rating = 1
+  power_rating_unit = W
+  power_rating_conf = compiletime
+  maxTemperature = 85
+  maxTemperature_unit = degC
+  maxTemperature_conf = compiletime
+  thermalEnable = false
+  thermalEnable_unit = 1
+  thermalEnable_conf = compiletime
+  thermalMass = 1
+  thermalMass_unit = J/K
+  thermalMass_conf = compiletime
+  fault_action = simscape.enum.assert.action.none
+  fault_action_unit = 1
+  fault_action_conf = compiletime
+  t_fault = 1
+  t_fault_unit = s
+  t_fault_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+  vc_specify = on
+  vc_priority = High
+  vc = V_initial*Ini_fac1
+  vc_unit = V
+  vc_nominal_specify = off
+  vc_nominal_value = 1
+  vc_nominal_unit = V
+  T_specify = off
+  T_priority = None
+  T = 298.15
+  T_unit = K
+  T_nominal_specify = off
+  T_nominal_value = 1
+  T_nominal_unit = K
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/R_s
+  Destination: RC_model/RC-parallel/Test1/C2
+  Destination: RC_model/RC-parallel/Test1/C1
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Electrical Reference
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+
+
+========================================
+BLOCK 3
+========================================
+Path:
+RC_model/RC-parallel/Test1/C1
+
+Name: C1
+Block type: SimscapeBlock
+Mask type: Capacitor
+Library source:
+ee_lib/Passive/Capacitor
+Link status: resolved
+
+PARAMETERS:
+  cap_option = ee.enum.passive.capacitor.capOption.const
+  cap_option_unit = 1
+  cap_option_conf = compiletime
+  c = C1
+  c_unit = F
+  c_conf = compiletime
+  Cvec = [1e-05, 1e-06]
+  Cvec_unit = F
+  Cvec_conf = compiletime
+  Vvec = [0, 10]
+  Vvec_unit = V
+  Vvec_conf = compiletime
+  CV_table_symmetry = ee.enum.passive.capacitor.tableSymmetry.yes
+  CV_table_symmetry_unit = 1
+  CV_table_symmetry_conf = compiletime
+  f_vec = [1, 10]
+  f_vec_unit = kHz
+  f_vec_conf = compiletime
+  DFext_vec = [.8, 1.2]
+  DFext_vec_unit = 1
+  DFext_vec_conf = compiletime
+  enable_C_tol = ee.enum.toleranceApplication.none
+  enable_C_tol_unit = 1
+  enable_C_tol_conf = compiletime
+  averaging_period = 0
+  averaging_period_unit = s
+  averaging_period_conf = compiletime
+  C_tol = 5
+  C_tol_unit = 1
+  C_tol_conf = compiletime
+  tol_distribution = ee.enum.toleranceDistribution.uniform
+  tol_distribution_unit = 1
+  tol_distribution_conf = compiletime
+  nSigma = 4
+  nSigma_unit = 1
+  nSigma_conf = compiletime
+  r = 0
+  r_unit = Ohm
+  r_conf = compiletime
+  g = 0
+  g_unit = 1/Ohm
+  g_conf = compiletime
+  enable_operating_limits = ee.enum.enable.no
+  enable_operating_limits_unit = 1
+  enable_operating_limits_conf = compiletime
+  operating_limit_action = ee.enum.passive.reportOpLim.warn
+  operating_limit_action_unit = 1
+  operating_limit_action_conf = compiletime
+  max_working_voltage_range = [-25, 25]
+  max_working_voltage_range_unit = V
+  max_working_voltage_range_conf = compiletime
+  power_rating = 1
+  power_rating_unit = W
+  power_rating_conf = compiletime
+  maxTemperature = 85
+  maxTemperature_unit = degC
+  maxTemperature_conf = compiletime
+  thermalEnable = false
+  thermalEnable_unit = 1
+  thermalEnable_conf = compiletime
+  thermalMass = 1
+  thermalMass_unit = J/K
+  thermalMass_conf = compiletime
+  fault_action = simscape.enum.assert.action.none
+  fault_action_unit = 1
+  fault_action_conf = compiletime
+  t_fault = 1
+  t_fault_unit = s
+  t_fault_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+  vc_specify = on
+  vc_priority = High
+  vc = V_initial*Ini_fac2
+  vc_unit = V
+  vc_nominal_specify = off
+  vc_nominal_value = 1
+  vc_nominal_unit = V
+  T_specify = off
+  T_priority = None
+  T = 298.15
+  T_unit = K
+  T_nominal_specify = off
+  T_nominal_value = 1
+  T_nominal_unit = K
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/R1
+  Destination: RC_model/RC-parallel/Test1/C2
+  Destination: RC_model/RC-parallel/Test1/C0
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Electrical Reference
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+
+
+========================================
+BLOCK 4
+========================================
+Path:
+RC_model/RC-parallel/Test1/C2
+
+Name: C2
+Block type: SimscapeBlock
+Mask type: Capacitor
+Library source:
+ee_lib/Passive/Capacitor
+Link status: resolved
+
+PARAMETERS:
+  cap_option = ee.enum.passive.capacitor.capOption.const
+  cap_option_unit = 1
+  cap_option_conf = compiletime
+  c = C2
+  c_unit = F
+  c_conf = compiletime
+  Cvec = [1e-05, 1e-06]
+  Cvec_unit = F
+  Cvec_conf = compiletime
+  Vvec = [0, 10]
+  Vvec_unit = V
+  Vvec_conf = compiletime
+  CV_table_symmetry = ee.enum.passive.capacitor.tableSymmetry.yes
+  CV_table_symmetry_unit = 1
+  CV_table_symmetry_conf = compiletime
+  f_vec = [1, 10]
+  f_vec_unit = kHz
+  f_vec_conf = compiletime
+  DFext_vec = [.8, 1.2]
+  DFext_vec_unit = 1
+  DFext_vec_conf = compiletime
+  enable_C_tol = ee.enum.toleranceApplication.none
+  enable_C_tol_unit = 1
+  enable_C_tol_conf = compiletime
+  averaging_period = 0
+  averaging_period_unit = s
+  averaging_period_conf = compiletime
+  C_tol = 5
+  C_tol_unit = 1
+  C_tol_conf = compiletime
+  tol_distribution = ee.enum.toleranceDistribution.uniform
+  tol_distribution_unit = 1
+  tol_distribution_conf = compiletime
+  nSigma = 4
+  nSigma_unit = 1
+  nSigma_conf = compiletime
+  r = 0
+  r_unit = Ohm
+  r_conf = compiletime
+  g = 0
+  g_unit = 1/Ohm
+  g_conf = compiletime
+  enable_operating_limits = ee.enum.enable.no
+  enable_operating_limits_unit = 1
+  enable_operating_limits_conf = compiletime
+  operating_limit_action = ee.enum.passive.reportOpLim.warn
+  operating_limit_action_unit = 1
+  operating_limit_action_conf = compiletime
+  max_working_voltage_range = [-25, 25]
+  max_working_voltage_range_unit = V
+  max_working_voltage_range_conf = compiletime
+  power_rating = 1
+  power_rating_unit = W
+  power_rating_conf = compiletime
+  maxTemperature = 85
+  maxTemperature_unit = degC
+  maxTemperature_conf = compiletime
+  thermalEnable = false
+  thermalEnable_unit = 1
+  thermalEnable_conf = compiletime
+  thermalMass = 1
+  thermalMass_unit = J/K
+  thermalMass_conf = compiletime
+  fault_action = simscape.enum.assert.action.none
+  fault_action_unit = 1
+  fault_action_conf = compiletime
+  t_fault = 1
+  t_fault_unit = s
+  t_fault_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+  vc_specify = on
+  vc_priority = High
+  vc = V_initial*Ini_fac3
+  vc_unit = V
+  vc_nominal_specify = off
+  vc_nominal_value = 1
+  vc_nominal_unit = V
+  T_specify = off
+  T_priority = None
+  T = 298.15
+  T_unit = K
+  T_nominal_specify = off
+  T_nominal_value = 1
+  T_nominal_unit = K
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/R2
+  Destination: RC_model/RC-parallel/Test1/C1
+  Destination: RC_model/RC-parallel/Test1/C0
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Electrical Reference
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+
+
+========================================
+BLOCK 5
+========================================
+Path:
+RC_model/RC-parallel/Test1/Controlled Current
+Source1
+
+Name: Controlled Current
+Source1
+Block type: SimscapeBlock
+Mask type: Controlled Current
+Source
+Library source:
+fl_lib/Electrical/Electrical Sources/Controlled Current
+Source
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/R_s
+  Destination: RC_model/RC-parallel/Test1/R1
+  Destination: RC_model/RC-parallel/Test1/R2
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Simulink-PS
+Converter
+  Destination: RC_model/RC-parallel/Test1/C2
+  Destination: RC_model/RC-parallel/Test1/C1
+  Destination: RC_model/RC-parallel/Test1/C0
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Electrical Reference
+
+
+========================================
+BLOCK 6
+========================================
+Path:
+RC_model/RC-parallel/Test1/Electrical Reference
+
+Name: Electrical Reference
+Block type: SimscapeBlock
+Mask type: Electrical Reference
+Library source:
+fl_lib/Electrical/Electrical Elements/Electrical Reference
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/C2
+  Destination: RC_model/RC-parallel/Test1/C1
+  Destination: RC_model/RC-parallel/Test1/C0
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+
+
+========================================
+BLOCK 7
+========================================
+Path:
+RC_model/RC-parallel/Test1/From
+Workspace
+
+Name: From
+Workspace
+Block type: FromWorkspace
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  VariableName = I_T
+  OutDataTypeStr = Inherit: auto
+  SampleTime = 0
+  Interpolate = on
+  ZeroCross = on
+  OutputAfterFinalValue = Extrapolation
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Simulink-PS
+Converter
+
+
+========================================
+BLOCK 8
+========================================
+Path:
+RC_model/RC-parallel/Test1/PS-Simulink
+Converter
+
+Name: PS-Simulink
+Converter
+Block type: SubSystem
+Mask type: PS-Simulink
+Converter
+Library source:
+nesl_utility/PS-Simulink
+Converter
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = ps_output
+  LeftPortType = input
+  RightPortType = output
+  PseudoPeriodic = off
+  Frequencies = []
+  VectorFormat = inherit
+  Unit = inherit
+  AffineConversion = off
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/To Workspace
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+
+
+========================================
+BLOCK 9
+========================================
+Path:
+RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/PS-Simulink
+Converter/output
+
+
+========================================
+BLOCK 10
+========================================
+Path:
+RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY/FROM_OUTPUT_1_1
+
+Name: FROM_OUTPUT_1_1
+Block type: From
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  GotoTag = NESL_TAG_99D89D1F
+  IconDisplay = Tag
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY/UNITCONV
+
+
+========================================
+BLOCK 11
+========================================
+Path:
+RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY/UNITCONV
+
+Name: UNITCONV
+Block type: SignalSpecification
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  Unit = 
+  Dimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY/FROM_OUTPUT_1_1
+  Destination: RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY/output
+
+
+========================================
+BLOCK 12
+========================================
+Path:
+RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY/UNITCONV
+
+
+========================================
+BLOCK 13
+========================================
+Path:
+RC_model/RC-parallel/Test1/PS-Simulink
+Converter/input
+
+Name: input
+Block type: PMIOPort
+Library source:
+nesl_utility/PS-Simulink
+Converter/input
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Left
+  ConnectionType = Inherit: auto
+  SampleTime = -1
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 14
+========================================
+Path:
+RC_model/RC-parallel/Test1/PS-Simulink
+Converter/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = V
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/PS-Simulink
+Converter/EVAL_KEY
+
+
+========================================
+BLOCK 15
+========================================
+Path:
+RC_model/RC-parallel/Test1/R1
+
+Name: R1
+Block type: SimscapeBlock
+Mask type: Resistor
+Library source:
+ee_lib/Passive/Resistor
+Link status: resolved
+
+PARAMETERS:
+  R = R1
+  R_unit = Ohm
+  R_conf = compiletime
+  enable_R_tol = ee.enum.toleranceApplication.none
+  enable_R_tol_unit = 1
+  enable_R_tol_conf = compiletime
+  R_tol = 5
+  R_tol_unit = 1
+  R_tol_conf = compiletime
+  tol_distribution = ee.enum.toleranceDistribution.uniform
+  tol_distribution_unit = 1
+  tol_distribution_conf = compiletime
+  nSigma = 4
+  nSigma_unit = 1
+  nSigma_conf = compiletime
+  enable_operating_limits = ee.enum.enable.no
+  enable_operating_limits_unit = 1
+  enable_operating_limits_conf = compiletime
+  operating_limit_action = ee.enum.passive.reportOpLim.warn
+  operating_limit_action_unit = 1
+  operating_limit_action_conf = compiletime
+  power_rating = 1
+  power_rating_unit = W
+  power_rating_conf = compiletime
+  max_working_voltage = 100
+  max_working_voltage_unit = V
+  max_working_voltage_conf = compiletime
+  noise_mode = ee.enum.sources.noise.Disabled
+  noise_mode_unit = 1
+  noise_mode_conf = compiletime
+  Tdevice = 25
+  Tdevice_unit = degC
+  Tdevice_conf = compiletime
+  sample_time = 1e-3
+  sample_time_unit = s
+  sample_time_conf = compiletime
+  repeatability = ee.enum.ic.repeatability.notRepeatable
+  repeatability_unit = 1
+  repeatability_conf = compiletime
+  user_seed = 0
+  user_seed_unit = 1
+  user_seed_conf = compiletime
+  auto_seed = 545404223
+  auto_seed_unit = 1
+  auto_seed_conf = compiletime
+  fault_action = simscape.enum.assert.action.none
+  fault_action_unit = 1
+  fault_action_conf = compiletime
+  t_fault = 1
+  t_fault_unit = s
+  t_fault_conf = compiletime
+  power_derating_T1 = 70
+  power_derating_T1_unit = degC
+  power_derating_T1_conf = compiletime
+  power_derating_T2 = 155
+  power_derating_T2_unit = degC
+  power_derating_T2_conf = compiletime
+  operating_temperature_range_vec = [-50, 150]
+  operating_temperature_range_vec_unit = degC
+  operating_temperature_range_vec_conf = compiletime
+  alpha = 3.93e-3
+  alpha_unit = 1/K
+  alpha_conf = compiletime
+  Tmeas = 25
+  Tmeas_unit = degC
+  Tmeas_conf = compiletime
+  thermal_mass = 100
+  thermal_mass_unit = J/K
+  thermal_mass_conf = compiletime
+  temperature_specify = off
+  temperature_priority = High
+  temperature = 298.15
+  temperature_unit = K
+  temperature_nominal_specify = off
+  temperature_nominal_value = 1
+  temperature_nominal_unit = K
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/R_s
+  Destination: RC_model/RC-parallel/Test1/R2
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+  Destination: RC_model/RC-parallel/Test1/C1
+
+
+========================================
+BLOCK 16
+========================================
+Path:
+RC_model/RC-parallel/Test1/R2
+
+Name: R2
+Block type: SimscapeBlock
+Mask type: Resistor
+Library source:
+ee_lib/Passive/Resistor
+Link status: resolved
+
+PARAMETERS:
+  R = R2
+  R_unit = Ohm
+  R_conf = compiletime
+  enable_R_tol = ee.enum.toleranceApplication.none
+  enable_R_tol_unit = 1
+  enable_R_tol_conf = compiletime
+  R_tol = 5
+  R_tol_unit = 1
+  R_tol_conf = compiletime
+  tol_distribution = ee.enum.toleranceDistribution.uniform
+  tol_distribution_unit = 1
+  tol_distribution_conf = compiletime
+  nSigma = 4
+  nSigma_unit = 1
+  nSigma_conf = compiletime
+  enable_operating_limits = ee.enum.enable.no
+  enable_operating_limits_unit = 1
+  enable_operating_limits_conf = compiletime
+  operating_limit_action = ee.enum.passive.reportOpLim.warn
+  operating_limit_action_unit = 1
+  operating_limit_action_conf = compiletime
+  power_rating = 1
+  power_rating_unit = W
+  power_rating_conf = compiletime
+  max_working_voltage = 100
+  max_working_voltage_unit = V
+  max_working_voltage_conf = compiletime
+  noise_mode = ee.enum.sources.noise.Disabled
+  noise_mode_unit = 1
+  noise_mode_conf = compiletime
+  Tdevice = 25
+  Tdevice_unit = degC
+  Tdevice_conf = compiletime
+  sample_time = 1e-3
+  sample_time_unit = s
+  sample_time_conf = compiletime
+  repeatability = ee.enum.ic.repeatability.notRepeatable
+  repeatability_unit = 1
+  repeatability_conf = compiletime
+  user_seed = 0
+  user_seed_unit = 1
+  user_seed_conf = compiletime
+  auto_seed = 3922919431
+  auto_seed_unit = 1
+  auto_seed_conf = compiletime
+  fault_action = simscape.enum.assert.action.none
+  fault_action_unit = 1
+  fault_action_conf = compiletime
+  t_fault = 1
+  t_fault_unit = s
+  t_fault_conf = compiletime
+  power_derating_T1 = 70
+  power_derating_T1_unit = degC
+  power_derating_T1_conf = compiletime
+  power_derating_T2 = 155
+  power_derating_T2_unit = degC
+  power_derating_T2_conf = compiletime
+  operating_temperature_range_vec = [-50, 150]
+  operating_temperature_range_vec_unit = degC
+  operating_temperature_range_vec_conf = compiletime
+  alpha = 3.93e-3
+  alpha_unit = 1/K
+  alpha_conf = compiletime
+  Tmeas = 25
+  Tmeas_unit = degC
+  Tmeas_conf = compiletime
+  thermal_mass = 100
+  thermal_mass_unit = J/K
+  thermal_mass_conf = compiletime
+  temperature_specify = off
+  temperature_priority = High
+  temperature = 298.15
+  temperature_unit = K
+  temperature_nominal_specify = off
+  temperature_nominal_value = 1
+  temperature_nominal_unit = K
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/R_s
+  Destination: RC_model/RC-parallel/Test1/R1
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+  Destination: RC_model/RC-parallel/Test1/C2
+
+
+========================================
+BLOCK 17
+========================================
+Path:
+RC_model/RC-parallel/Test1/R_s
+
+Name: R_s
+Block type: SimscapeBlock
+Mask type: Resistor
+Library source:
+ee_lib/Passive/Resistor
+Link status: resolved
+
+PARAMETERS:
+  R = R_s
+  R_unit = Ohm
+  R_conf = compiletime
+  enable_R_tol = ee.enum.toleranceApplication.none
+  enable_R_tol_unit = 1
+  enable_R_tol_conf = compiletime
+  R_tol = 5
+  R_tol_unit = 1
+  R_tol_conf = compiletime
+  tol_distribution = ee.enum.toleranceDistribution.uniform
+  tol_distribution_unit = 1
+  tol_distribution_conf = compiletime
+  nSigma = 4
+  nSigma_unit = 1
+  nSigma_conf = compiletime
+  enable_operating_limits = ee.enum.enable.no
+  enable_operating_limits_unit = 1
+  enable_operating_limits_conf = compiletime
+  operating_limit_action = ee.enum.passive.reportOpLim.warn
+  operating_limit_action_unit = 1
+  operating_limit_action_conf = compiletime
+  power_rating = 1
+  power_rating_unit = W
+  power_rating_conf = compiletime
+  max_working_voltage = 100
+  max_working_voltage_unit = V
+  max_working_voltage_conf = compiletime
+  noise_mode = ee.enum.sources.noise.Disabled
+  noise_mode_unit = 1
+  noise_mode_conf = compiletime
+  Tdevice = 25
+  Tdevice_unit = degC
+  Tdevice_conf = compiletime
+  sample_time = 1e-3
+  sample_time_unit = s
+  sample_time_conf = compiletime
+  repeatability = ee.enum.ic.repeatability.notRepeatable
+  repeatability_unit = 1
+  repeatability_conf = compiletime
+  user_seed = 0
+  user_seed_unit = 1
+  user_seed_conf = compiletime
+  auto_seed = 3499211588
+  auto_seed_unit = 1
+  auto_seed_conf = compiletime
+  fault_action = simscape.enum.assert.action.none
+  fault_action_unit = 1
+  fault_action_conf = compiletime
+  t_fault = 1
+  t_fault_unit = s
+  t_fault_conf = compiletime
+  power_derating_T1 = 70
+  power_derating_T1_unit = degC
+  power_derating_T1_conf = compiletime
+  power_derating_T2 = 155
+  power_derating_T2_unit = degC
+  power_derating_T2_conf = compiletime
+  operating_temperature_range_vec = [-50, 150]
+  operating_temperature_range_vec_unit = degC
+  operating_temperature_range_vec_conf = compiletime
+  alpha = 3.93e-3
+  alpha_unit = 1/K
+  alpha_conf = compiletime
+  Tmeas = 25
+  Tmeas_unit = degC
+  Tmeas_conf = compiletime
+  thermal_mass = 100
+  thermal_mass_unit = J/K
+  thermal_mass_conf = compiletime
+  temperature_specify = off
+  temperature_priority = High
+  temperature = 298.15
+  temperature_unit = K
+  temperature_nominal_specify = off
+  temperature_nominal_value = 1
+  temperature_nominal_unit = K
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/R1
+  Destination: RC_model/RC-parallel/Test1/R2
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+  Destination: RC_model/RC-parallel/Test1/C0
+
+
+========================================
+BLOCK 18
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter
+
+Name: Simulink-PS
+Converter
+Block type: SubSystem
+Mask type: Simulink-PS
+Converter
+Library source:
+nesl_utility/Simulink-PS
+Converter
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = ps_input
+  LeftPortType = input
+  RightPortType = output
+  PseudoPeriodic = off
+  Frequencies = []
+  NoiseDistribution = none
+  NoiseParameters = []
+  Unit = 1
+  AffineConversion = off
+  FilteringAndDerivatives = provide
+  SimscapeFilterOrder = 1
+  InputFilterTimeConstant = 0.001
+  UdotUserProvided = 0
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/From
+Workspace
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+
+
+========================================
+BLOCK 19
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/input0
+
+Name: input0
+Block type: Inport
+Library source:
+nesl_utility/Simulink-PS
+Converter/input0
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = double
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  Unit = 1
+  PortDimensions = 1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  LatchByDelayingOutsideSignal = off
+  LatchInputForFeedbackSignals = off
+  Interpolate = on
+  InputConnect = 
+  DataMode = inherit
+  MessageQueueUseDefaultAttributes = on
+  MessageQueueCapacity = 1
+  MessageQueueType = LIFO
+  MessageQueueOverwriting = on
+  EventTriggers = []
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY
+
+
+========================================
+BLOCK 20
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/input0
+  Source: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/input1
+  Source: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/input2
+
+
+========================================
+BLOCK 21
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/input0
+
+Name: input0
+Block type: Inport
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/input0
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  LatchByDelayingOutsideSignal = off
+  LatchInputForFeedbackSignals = off
+  Interpolate = on
+  InputConnect = 
+  DataMode = inherit
+  MessageQueueUseDefaultAttributes = on
+  MessageQueueCapacity = 1
+  MessageQueueType = LIFO
+  MessageQueueOverwriting = on
+  EventTriggers = []
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/GOTO_0
+
+
+========================================
+BLOCK 22
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/input1
+
+Name: input1
+Block type: Inport
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/input1
+Link status: implicit
+
+PARAMETERS:
+  Port = 2
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  LatchByDelayingOutsideSignal = off
+  LatchInputForFeedbackSignals = off
+  Interpolate = on
+  InputConnect = 
+  DataMode = inherit
+  MessageQueueUseDefaultAttributes = on
+  MessageQueueCapacity = 1
+  MessageQueueType = LIFO
+  MessageQueueOverwriting = on
+  EventTriggers = []
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/GOTO_1
+
+
+========================================
+BLOCK 23
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/input2
+
+Name: input2
+Block type: Inport
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/input2
+Link status: implicit
+
+PARAMETERS:
+  Port = 3
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  LatchByDelayingOutsideSignal = off
+  LatchInputForFeedbackSignals = off
+  Interpolate = on
+  InputConnect = 
+  DataMode = inherit
+  MessageQueueUseDefaultAttributes = on
+  MessageQueueCapacity = 1
+  MessageQueueType = LIFO
+  MessageQueueOverwriting = on
+  EventTriggers = []
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/GOTO_2
+
+
+========================================
+BLOCK 24
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/GOTO_0
+
+Name: GOTO_0
+Block type: Goto
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  GotoTag = NESL_TAG_DB544D7F
+  IconDisplay = Tag
+  TagVisibility = global
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/input0
+
+
+========================================
+BLOCK 25
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/GOTO_1
+
+Name: GOTO_1
+Block type: Goto
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  GotoTag = NESL_TAG_AC537DE9
+  IconDisplay = Tag
+  TagVisibility = global
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/input1
+
+
+========================================
+BLOCK 26
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/GOTO_2
+
+Name: GOTO_2
+Block type: Goto
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  GotoTag = NESL_TAG_355A2C53
+  IconDisplay = Tag
+  TagVisibility = global
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY/input2
+
+
+========================================
+BLOCK 27
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/input1
+
+Name: input1
+Block type: Ground
+Library source:
+nesl_utility/Simulink-PS
+Converter/input1
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY
+
+
+========================================
+BLOCK 28
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/input2
+
+Name: input2
+Block type: Ground
+Library source:
+nesl_utility/Simulink-PS
+Converter/input2
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Simulink-PS
+Converter/EVAL_KEY
+
+
+========================================
+BLOCK 29
+========================================
+Path:
+RC_model/RC-parallel/Test1/Simulink-PS
+Converter/output
+
+Name: output
+Block type: PMIOPort
+Library source:
+nesl_utility/Simulink-PS
+Converter/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Right
+  ConnectionType = Inherit: auto
+  SampleTime = -1
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 30
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration
+
+Name: Solver
+Configuration
+Block type: SubSystem
+Mask type: Solver
+Configuration
+Library source:
+nesl_utility/Solver
+Configuration
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = solver
+  LeftPortType = input
+  RightPortType = generic
+  Tones = []
+  Harmonics = []
+  SimulateNoise = off
+  IndexReductionMethod = DerivativeReplacement
+  DoDC = off
+  ResidualTolerance = 1e-09
+  ConsistencyTolSource = GLOBAL
+  ConsistencyAbsTol = 0.001
+  ConsistencyRelTol = 0.001
+  ConsistencyTolFactor = 0.001
+  UseLocalSolver = off
+  LocalSolverChoice = NE_BACKWARD_EULER_ADVANCER
+  ResolveIndetEquations = on
+  FunctionEvalNumThread = 1
+  LocalSolverSampleTime = 0.001
+  DoFixedCost = off
+  MaxNonlinIter = 3
+  MaxModeIter = 2
+  ComputeImpulses = off
+  ImpulseIterations = 2
+  LinearAlgebra = auto
+  LinearAlgebraNumThread = 0
+  EquationFormulation = NE_TIME_EF
+  DelaysMemoryBudget = 1024
+  AutomaticFiltering = on
+  FilteringTimeConstant = 0.001
+  PartitionStorageMethod = AS_NEEDED
+  PartitionMemoryBudget = 1024
+  PartitionMethod = ROBUST
+  MultibodyUseLocalSolver = off
+  MultibodyLocalSolverChoice = ODE1
+  MultibodyLocalSolverSampleTime = 0.001
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/C2
+  Destination: RC_model/RC-parallel/Test1/C1
+  Destination: RC_model/RC-parallel/Test1/C0
+  Destination: RC_model/RC-parallel/Test1/Voltage Sensor
+  Destination: RC_model/RC-parallel/Test1/Electrical Reference
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+
+
+========================================
+BLOCK 31
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/Solver
+Configuration/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 32
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_1_1_1
+
+Name: INPUT_1_1_1
+Block type: SimscapeInputBlock
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  Converter = RC_model/RC-parallel/Test1/Simulink-PS
+Converter
+  Connector = RC_parallel.Test1.Simulink_PS_Converter.output
+  Required = 0
+  Provided = 0
+  ZeroDers = 0
+  Order = 0
+  Lag = 0.001
+  Gain = simscape.engine.sli.internal.computeConversionAllowingImplicit('1', '1', 'linear')
+  Offset = 0
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_0
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_1
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_2
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_1_0
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/STATE_1
+
+
+========================================
+BLOCK 33
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_0
+
+Name: INPUT_DEMUX_1_0
+Block type: Demux
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  Outputs = 1
+  DisplayOption = bar
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_FROM_1_0
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_1_1_1
+
+
+========================================
+BLOCK 34
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_1
+
+Name: INPUT_DEMUX_1_1
+Block type: Demux
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  Outputs = 1
+  DisplayOption = bar
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_FROM_1_1
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_1_1_1
+
+
+========================================
+BLOCK 35
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_2
+
+Name: INPUT_DEMUX_1_2
+Block type: Demux
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  Outputs = 1
+  DisplayOption = bar
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_FROM_1_2
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_1_1_1
+
+
+========================================
+BLOCK 36
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_FROM_1_0
+
+Name: INPUT_FROM_1_0
+Block type: From
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  GotoTag = NESL_TAG_DB544D7F
+  IconDisplay = Tag
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_0
+
+
+========================================
+BLOCK 37
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_FROM_1_1
+
+Name: INPUT_FROM_1_1
+Block type: From
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  GotoTag = NESL_TAG_AC537DE9
+  IconDisplay = Tag
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_1
+
+
+========================================
+BLOCK 38
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_FROM_1_2
+
+Name: INPUT_FROM_1_2
+Block type: From
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  GotoTag = NESL_TAG_355A2C53
+  IconDisplay = Tag
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_DEMUX_1_2
+
+
+========================================
+BLOCK 39
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_1_0
+
+Name: OUTPUT_1_0
+Block type: SimscapeExecutionBlock
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_1_1_1
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/STATE_1
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_MUX_1
+
+
+========================================
+BLOCK 40
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_GOTO_1
+
+Name: OUTPUT_GOTO_1
+Block type: Goto
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  GotoTag = NESL_TAG_99D89D1F
+  IconDisplay = Tag
+  TagVisibility = global
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_SELECTOR_1_1
+
+
+========================================
+BLOCK 41
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_MUX_1
+
+Name: OUTPUT_MUX_1
+Block type: Mux
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  Inputs = 1
+  DisplayOption = none
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_1_0
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_SELECTOR_1_1
+
+
+========================================
+BLOCK 42
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_SELECTOR_1_1
+
+Name: OUTPUT_SELECTOR_1_1
+Block type: Selector
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  NumberOfDimensions = 1
+  IndexMode = One-based
+  IndexOptionArray = <non-text value>
+  IndexParamArray = <non-text value>
+  OutputSizeArray = <non-text value>
+  InputPortWidth = -1
+  SampleTime = -1
+  IndexOptions = Index vector (dialog)
+  Indices = 1
+  OutputSizes = 1
+  RuntimeRangeChecks = off
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_MUX_1
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_GOTO_1
+
+
+========================================
+BLOCK 43
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/STATE_1
+
+Name: STATE_1
+Block type: SimscapeExecutionBlock
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/INPUT_1_1_1
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration/EVAL_KEY/OUTPUT_1_0
+
+
+========================================
+BLOCK 44
+========================================
+Path:
+RC_model/RC-parallel/Test1/Solver
+Configuration/a
+
+Name: a
+Block type: PMIOPort
+Library source:
+nesl_utility/Solver
+Configuration/a
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Right
+  ConnectionType = Inherit: auto
+  SampleTime = UseLocalSolver * LocalSolverSampleTime - (~UseLocalSolver)
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 45
+========================================
+Path:
+RC_model/RC-parallel/Test1/To Workspace
+
+Name: To Workspace
+Block type: ToWorkspace
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  VariableName = V_T
+  MaxDataPoints = inf
+  Decimation = 1
+  SaveFormat = Timeseries
+  Save2DSignal = 3-D array (concatenate along third dimension)
+  FixptAsFi = on
+  SampleTime = -1
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/Test1/PS-Simulink
+Converter
+
+
+========================================
+BLOCK 46
+========================================
+Path:
+RC_model/RC-parallel/Test1/Voltage Sensor
+
+Name: Voltage Sensor
+Block type: SimscapeBlock
+Mask type: Voltage Sensor
+Library source:
+fl_lib/Electrical/Electrical Sensors/Voltage Sensor
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/Test1/R_s
+  Destination: RC_model/RC-parallel/Test1/R1
+  Destination: RC_model/RC-parallel/Test1/R2
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+  Destination: RC_model/RC-parallel/Test1/PS-Simulink
+Converter
+  Destination: RC_model/RC-parallel/Test1/C2
+  Destination: RC_model/RC-parallel/Test1/C1
+  Destination: RC_model/RC-parallel/Test1/C0
+  Destination: RC_model/RC-parallel/Test1/Solver
+Configuration
+  Destination: RC_model/RC-parallel/Test1/Electrical Reference
+  Destination: RC_model/RC-parallel/Test1/Controlled Current
+Source1
+
+
+
+========================================
+MODEL SOLVER SETTINGS
+========================================
+
+Solver = VariableStepAuto
+SolverType = Variable-step
+StopTime = 76.1547
+MaxStep = 0.01
+MinStep = auto
+RelTol = 1e-3
+AbsTol = auto

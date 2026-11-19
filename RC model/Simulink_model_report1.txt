@@ -1,0 +1,2002 @@
+SIMULINK / SIMSCAPE MODEL REPORT
+========================================
+
+Model: RC_model
+Subsystem: RC_model/RC-parallel/R2
+
+NUMBER OF BLOCKS: 57
+
+========================================
+BLOCK 1
+========================================
+Path:
+RC_model/RC-parallel/R2
+
+Name: R2
+Block type: SubSystem
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  ShowPortLabels = FromPortIcon
+  BlockChoice = 
+  TemplateBlock = 
+  MemberBlocks = 
+  Permissions = ReadWrite
+  ErrorFcn = 
+  PermitHierarchicalResolution = All
+  TreatAsAtomicUnit = off
+  ShowSubsystemReinitializePorts = off
+  MinAlgLoopOccurrences = off
+  ScheduleAs = Sample time
+  PartitionName = 
+  SystemSampleTime = -1
+  SetExecutionDomain = off
+  ExecutionDomainType = Deduce
+  RTWSystemCode = Auto
+  RTWFcnNameOpts = Auto
+  RTWFcnName = 
+  RTWFileNameOpts = Auto
+  RTWFileName = 
+  FunctionInterfaceSpec = void_void
+  FunctionWithSeparateData = off
+  RTWMemSecFuncInitTerm = Inherit from model
+  RTWMemSecFuncExecute = Inherit from model
+  RTWMemSecDataConstants = Inherit from model
+  RTWMemSecDataInternal = Inherit from model
+  RTWMemSecDataParameters = Inherit from model
+  IsSubsystemVirtual = on
+  Variant = off
+  VariantChoicesSpecifier = 
+  VariantChoicesEnumeration = 
+  VariantControlVariable = 
+  VariantChoices = []
+  VariantControlMode = expression
+  VariantControl = 
+  LabelModeActiveChoice = 
+  VariantActivationTime = update diagram
+  AllowZeroVariantControls = off
+  PropagateVariantConditions = off
+  AllowFlexibleInterface = on
+  TreatAsGroupedWhenPropagatingVariantConditions = on
+  ReferencedSubsystem = 
+  Latency = 0
+  AutoFrameSizeCalculation = off
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 2
+========================================
+Path:
+RC_model/RC-parallel/R2/C0
+
+Name: C0
+Block type: SimscapeBlock
+Mask type: Capacitor
+Library source:
+fl_lib/Electrical/Electrical Elements/Capacitor
+Link status: resolved
+
+PARAMETERS:
+  c = C0
+  c_unit = F
+  c_conf = compiletime
+  r = 0
+  r_unit = Ohm
+  r_conf = compiletime
+  g = 0
+  g_unit = 1/Ohm
+  g_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+  vc_specify = on
+  vc_priority = High
+  vc = V_initial
+  vc_unit = V
+  vc_nominal_specify = off
+  vc_nominal_value = 1
+  vc_nominal_unit = V
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/R_s
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/C2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 3
+========================================
+Path:
+RC_model/RC-parallel/R2/C1
+
+Name: C1
+Block type: SimscapeBlock
+Mask type: Capacitor
+Library source:
+fl_lib/Electrical/Electrical Elements/Capacitor
+Link status: resolved
+
+PARAMETERS:
+  c = C1
+  c_unit = F
+  c_conf = compiletime
+  r = 0
+  r_unit = Ohm
+  r_conf = compiletime
+  g = 0
+  g_unit = 1/Ohm
+  g_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+  vc_specify = off
+  vc_priority = High
+  vc = 0
+  vc_unit = V
+  vc_nominal_specify = off
+  vc_nominal_value = 1
+  vc_nominal_unit = V
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/R1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/C2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 4
+========================================
+Path:
+RC_model/RC-parallel/R2/C2
+
+Name: C2
+Block type: SimscapeBlock
+Mask type: Capacitor
+Library source:
+fl_lib/Electrical/Electrical Elements/Capacitor
+Link status: resolved
+
+PARAMETERS:
+  c = C2
+  c_unit = F
+  c_conf = compiletime
+  r = 0
+  r_unit = Ohm
+  r_conf = compiletime
+  g = 0
+  g_unit = 1/Ohm
+  g_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+  vc_specify = off
+  vc_priority = High
+  vc = 0
+  vc_unit = V
+  vc_nominal_specify = off
+  vc_nominal_value = 1
+  vc_nominal_unit = V
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/R2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 5
+========================================
+Path:
+RC_model/RC-parallel/R2/Controlled Current
+Source
+
+Name: Controlled Current
+Source
+Block type: SimscapeBlock
+Mask type: Controlled Current
+Source
+Library source:
+fl_lib/Electrical/Electrical Sources/Controlled Current
+Source
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+  Destination: RC_model/RC-parallel/R2/R2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/R1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/R_s
+  Destination: RC_model/RC-parallel/R2/Simulink-PS
+Converter
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/C2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 6
+========================================
+Path:
+RC_model/RC-parallel/R2/Electrical Reference
+
+Name: Electrical Reference
+Block type: SimscapeBlock
+Mask type: Electrical Reference
+Library source:
+fl_lib/Electrical/Electrical Elements/Electrical Reference
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/C2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 7
+========================================
+Path:
+RC_model/RC-parallel/R2/From
+Workspace
+
+Name: From
+Workspace
+Block type: FromWorkspace
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  VariableName = I_T
+  OutDataTypeStr = Inherit: auto
+  SampleTime = 0
+  Interpolate = on
+  ZeroCross = on
+  OutputAfterFinalValue = Extrapolation
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Simulink-PS
+Converter
+
+
+========================================
+BLOCK 8
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter
+
+Name: PS-Simulink
+Converter
+Block type: SubSystem
+Mask type: PS-Simulink
+Converter
+Library source:
+nesl_utility/PS-Simulink
+Converter
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = ps_output
+  LeftPortType = input
+  RightPortType = output
+  PseudoPeriodic = off
+  Frequencies = []
+  VectorFormat = inherit
+  Unit = inherit
+  AffineConversion = off
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/To Workspace
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+
+
+========================================
+BLOCK 9
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter/output
+
+
+========================================
+BLOCK 10
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter/EVAL_KEY/Ground
+
+Name: Ground
+Block type: Ground
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/Ground
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter/EVAL_KEY/output
+
+
+========================================
+BLOCK 11
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter/EVAL_KEY/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter/EVAL_KEY/Ground
+
+
+========================================
+BLOCK 12
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter/input
+
+Name: input
+Block type: PMIOPort
+Library source:
+nesl_utility/PS-Simulink
+Converter/input
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Left
+  ConnectionType = Inherit: auto
+  SampleTime = -1
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 13
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter/EVAL_KEY
+
+
+========================================
+BLOCK 14
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter1
+
+Name: PS-Simulink
+Converter1
+Block type: SubSystem
+Mask type: PS-Simulink
+Converter
+Library source:
+nesl_utility/PS-Simulink
+Converter
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = ps_output
+  LeftPortType = input
+  RightPortType = output
+  PseudoPeriodic = off
+  Frequencies = []
+  VectorFormat = inherit
+  Unit = inherit
+  AffineConversion = off
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/To Workspace1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+
+
+========================================
+BLOCK 15
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter1/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter1/output
+
+
+========================================
+BLOCK 16
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter1/EVAL_KEY/Ground
+
+Name: Ground
+Block type: Ground
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/Ground
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter1/EVAL_KEY/output
+
+
+========================================
+BLOCK 17
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter1/EVAL_KEY/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter1/EVAL_KEY/Ground
+
+
+========================================
+BLOCK 18
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter1/input
+
+Name: input
+Block type: PMIOPort
+Library source:
+nesl_utility/PS-Simulink
+Converter/input
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Left
+  ConnectionType = Inherit: auto
+  SampleTime = -1
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 19
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter1/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter1/EVAL_KEY
+
+
+========================================
+BLOCK 20
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter2
+
+Name: PS-Simulink
+Converter2
+Block type: SubSystem
+Mask type: PS-Simulink
+Converter
+Library source:
+nesl_utility/PS-Simulink
+Converter
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = ps_output
+  LeftPortType = input
+  RightPortType = output
+  PseudoPeriodic = off
+  Frequencies = []
+  VectorFormat = inherit
+  Unit = inherit
+  AffineConversion = off
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/To Workspace2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+
+
+========================================
+BLOCK 21
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter2/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter2/output
+
+
+========================================
+BLOCK 22
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter2/EVAL_KEY/Ground
+
+Name: Ground
+Block type: Ground
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/Ground
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter2/EVAL_KEY/output
+
+
+========================================
+BLOCK 23
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter2/EVAL_KEY/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter2/EVAL_KEY/Ground
+
+
+========================================
+BLOCK 24
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter2/input
+
+Name: input
+Block type: PMIOPort
+Library source:
+nesl_utility/PS-Simulink
+Converter/input
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Left
+  ConnectionType = Inherit: auto
+  SampleTime = -1
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 25
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter2/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter2/EVAL_KEY
+
+
+========================================
+BLOCK 26
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter3
+
+Name: PS-Simulink
+Converter3
+Block type: SubSystem
+Mask type: PS-Simulink
+Converter
+Library source:
+nesl_utility/PS-Simulink
+Converter
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = ps_output
+  LeftPortType = input
+  RightPortType = output
+  PseudoPeriodic = off
+  Frequencies = []
+  VectorFormat = inherit
+  Unit = inherit
+  AffineConversion = off
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/To Workspace3
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 27
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter3/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter3/output
+
+
+========================================
+BLOCK 28
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter3/EVAL_KEY/Ground
+
+Name: Ground
+Block type: Ground
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/Ground
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter3/EVAL_KEY/output
+
+
+========================================
+BLOCK 29
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter3/EVAL_KEY/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/EVAL_KEY/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter3/EVAL_KEY/Ground
+
+
+========================================
+BLOCK 30
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter3/input
+
+Name: input
+Block type: PMIOPort
+Library source:
+nesl_utility/PS-Simulink
+Converter/input
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Left
+  ConnectionType = Inherit: auto
+  SampleTime = -1
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 31
+========================================
+Path:
+RC_model/RC-parallel/R2/PS-Simulink
+Converter3/output
+
+Name: output
+Block type: Outport
+Library source:
+nesl_utility/PS-Simulink
+Converter/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  SignalName = 
+  SignalObject = []
+  StorageClass = Auto
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  DataMode = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  EnsureOutportIsVirtual = off
+  OutputWhenDisabled = held
+  InitialOutput = []
+  MustResolveToSignalObject = off
+  OutputWhenUnConnected = off
+  OutputWhenUnconnectedValue = 0
+  VectorParamsAs1DForOutWhenUnconnected = on
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter3/EVAL_KEY
+
+
+========================================
+BLOCK 32
+========================================
+Path:
+RC_model/RC-parallel/R2/R1
+
+Name: R1
+Block type: SimscapeBlock
+Mask type: Resistor
+Library source:
+fl_lib/Electrical/Electrical Elements/Resistor
+Link status: resolved
+
+PARAMETERS:
+  R = R1
+  R_unit = Ohm
+  R_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+  Destination: RC_model/RC-parallel/R2/R2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/R_s
+  Destination: RC_model/RC-parallel/R2/C1
+
+
+========================================
+BLOCK 33
+========================================
+Path:
+RC_model/RC-parallel/R2/R2
+
+Name: R2
+Block type: SimscapeBlock
+Mask type: Resistor
+Library source:
+fl_lib/Electrical/Electrical Elements/Resistor
+Link status: resolved
+
+PARAMETERS:
+  R = R2
+  R_unit = Ohm
+  R_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/R1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/R_s
+  Destination: RC_model/RC-parallel/R2/C2
+
+
+========================================
+BLOCK 34
+========================================
+Path:
+RC_model/RC-parallel/R2/R_s
+
+Name: R_s
+Block type: SimscapeBlock
+Mask type: Resistor
+Library source:
+fl_lib/Electrical/Electrical Elements/Resistor
+Link status: resolved
+
+PARAMETERS:
+  R = R_s
+  R_unit = Ohm
+  R_conf = compiletime
+  i_specify = off
+  i_priority = None
+  i = 0
+  i_unit = A
+  i_nominal_specify = off
+  i_nominal_value = 1
+  i_nominal_unit = A
+  v_specify = off
+  v_priority = None
+  v = 0
+  v_unit = V
+  v_nominal_specify = off
+  v_nominal_value = 1
+  v_nominal_unit = V
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+  Destination: RC_model/RC-parallel/R2/R2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/R1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/C0
+
+
+========================================
+BLOCK 35
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter
+
+Name: Simulink-PS
+Converter
+Block type: SubSystem
+Mask type: Simulink-PS
+Converter
+Library source:
+nesl_utility/Simulink-PS
+Converter
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = ps_input
+  LeftPortType = input
+  RightPortType = output
+  PseudoPeriodic = off
+  Frequencies = []
+  NoiseDistribution = none
+  NoiseParameters = []
+  Unit = 1
+  AffineConversion = off
+  FilteringAndDerivatives = provide
+  SimscapeFilterOrder = 1
+  InputFilterTimeConstant = 0.001
+  UdotUserProvided = 0
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/From
+Workspace
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+
+
+========================================
+BLOCK 36
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/input0
+
+Name: input0
+Block type: Inport
+Library source:
+nesl_utility/Simulink-PS
+Converter/input0
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = double
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  Unit = 1
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  LatchByDelayingOutsideSignal = off
+  LatchInputForFeedbackSignals = off
+  Interpolate = on
+  InputConnect = 
+  DataMode = inherit
+  MessageQueueUseDefaultAttributes = on
+  MessageQueueCapacity = 1
+  MessageQueueType = LIFO
+  MessageQueueOverwriting = on
+  EventTriggers = []
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY
+
+
+========================================
+BLOCK 37
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/Simulink-PS
+Converter/input0
+  Source: RC_model/RC-parallel/R2/Simulink-PS
+Converter/input1
+  Source: RC_model/RC-parallel/R2/Simulink-PS
+Converter/input2
+
+
+========================================
+BLOCK 38
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/input0
+
+Name: input0
+Block type: Inport
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/input0
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  LatchByDelayingOutsideSignal = off
+  LatchInputForFeedbackSignals = off
+  Interpolate = on
+  InputConnect = 
+  DataMode = inherit
+  MessageQueueUseDefaultAttributes = on
+  MessageQueueCapacity = 1
+  MessageQueueType = LIFO
+  MessageQueueOverwriting = on
+  EventTriggers = []
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/Terminator0
+
+
+========================================
+BLOCK 39
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/input1
+
+Name: input1
+Block type: Inport
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/input1
+Link status: implicit
+
+PARAMETERS:
+  Port = 2
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  LatchByDelayingOutsideSignal = off
+  LatchInputForFeedbackSignals = off
+  Interpolate = on
+  InputConnect = 
+  DataMode = inherit
+  MessageQueueUseDefaultAttributes = on
+  MessageQueueCapacity = 1
+  MessageQueueType = LIFO
+  MessageQueueOverwriting = on
+  EventTriggers = []
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/Terminator1
+
+
+========================================
+BLOCK 40
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/input2
+
+Name: input2
+Block type: Inport
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/input2
+Link status: implicit
+
+PARAMETERS:
+  Port = 3
+  IconDisplay = Port number
+  OutputFunctionCall = off
+  OutMin = []
+  OutMax = []
+  OutDataTypeStr = Inherit: auto
+  LockScale = off
+  BusOutputAsStruct = off
+  BusVirtuality = inherit
+  Unit = inherit
+  PortDimensions = -1
+  VarSizeSig = Inherit
+  SampleTime = -1
+  SignalType = auto
+  LatchByDelayingOutsideSignal = off
+  LatchInputForFeedbackSignals = off
+  Interpolate = on
+  InputConnect = 
+  DataMode = inherit
+  MessageQueueUseDefaultAttributes = on
+  MessageQueueCapacity = 1
+  MessageQueueType = LIFO
+  MessageQueueOverwriting = on
+  EventTriggers = []
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/Terminator2
+
+
+========================================
+BLOCK 41
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/Terminator0
+
+Name: Terminator0
+Block type: Terminator
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/Terminator0
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/input0
+
+
+========================================
+BLOCK 42
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/Terminator1
+
+Name: Terminator1
+Block type: Terminator
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/Terminator1
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/input1
+
+
+========================================
+BLOCK 43
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/Terminator2
+
+Name: Terminator2
+Block type: Terminator
+Library source:
+nesl_utility/Simulink-PS
+Converter/EVAL_KEY/Terminator2
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY/input2
+
+
+========================================
+BLOCK 44
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/input1
+
+Name: input1
+Block type: Ground
+Library source:
+nesl_utility/Simulink-PS
+Converter/input1
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY
+
+
+========================================
+BLOCK 45
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/input2
+
+Name: input2
+Block type: Ground
+Library source:
+nesl_utility/Simulink-PS
+Converter/input2
+Link status: implicit
+
+PARAMETERS:
+  No dialog parameters
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Simulink-PS
+Converter/EVAL_KEY
+
+
+========================================
+BLOCK 46
+========================================
+Path:
+RC_model/RC-parallel/R2/Simulink-PS
+Converter/output
+
+Name: output
+Block type: PMIOPort
+Library source:
+nesl_utility/Simulink-PS
+Converter/output
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Right
+  ConnectionType = Inherit: auto
+  SampleTime = -1
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 47
+========================================
+Path:
+RC_model/RC-parallel/R2/Solver
+Configuration
+
+Name: Solver
+Configuration
+Block type: SubSystem
+Mask type: Solver
+Configuration
+Library source:
+nesl_utility/Solver
+Configuration
+Link status: resolved
+
+PARAMETERS:
+  PhysicalDomain = network_engine_domain
+  SubClassName = solver
+  LeftPortType = input
+  RightPortType = generic
+  Tones = []
+  Harmonics = []
+  SimulateNoise = off
+  IndexReductionMethod = DerivativeReplacement
+  DoDC = off
+  ResidualTolerance = 1e-09
+  ConsistencyTolSource = GLOBAL
+  ConsistencyAbsTol = 0.001
+  ConsistencyRelTol = 0.001
+  ConsistencyTolFactor = 0.001
+  UseLocalSolver = off
+  LocalSolverChoice = NE_BACKWARD_EULER_ADVANCER
+  ResolveIndetEquations = on
+  FunctionEvalNumThread = 1
+  LocalSolverSampleTime = 0.001
+  DoFixedCost = off
+  MaxNonlinIter = 3
+  MaxModeIter = 2
+  ComputeImpulses = off
+  ImpulseIterations = 2
+  LinearAlgebra = auto
+  LinearAlgebraNumThread = 0
+  EquationFormulation = NE_TIME_EF
+  DelaysMemoryBudget = 1024
+  AutomaticFiltering = on
+  FilteringTimeConstant = 0.001
+  PartitionStorageMethod = AS_NEEDED
+  PartitionMemoryBudget = 1024
+  PartitionMethod = ROBUST
+  MultibodyUseLocalSolver = off
+  MultibodyLocalSolverChoice = ODE1
+  MultibodyLocalSolverSampleTime = 0.001
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/C2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 48
+========================================
+Path:
+RC_model/RC-parallel/R2/Solver
+Configuration/EVAL_KEY
+
+Name: EVAL_KEY
+Block type: SubSystem
+Library source:
+nesl_utility/Solver
+Configuration/EVAL_KEY
+Link status: implicit
+
+PARAMETERS:
+  SubClassName = eval_key
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 49
+========================================
+Path:
+RC_model/RC-parallel/R2/Solver
+Configuration/a
+
+Name: a
+Block type: PMIOPort
+Library source:
+nesl_utility/Solver
+Configuration/a
+Link status: implicit
+
+PARAMETERS:
+  Port = 1
+  Side = Right
+  ConnectionType = Inherit: auto
+  SampleTime = UseLocalSolver * LocalSolverSampleTime - (~UseLocalSolver)
+
+CONNECTIONS:
+
+
+========================================
+BLOCK 50
+========================================
+Path:
+RC_model/RC-parallel/R2/To Workspace
+
+Name: To Workspace
+Block type: ToWorkspace
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  VariableName = V_T
+  MaxDataPoints = inf
+  Decimation = 1
+  SaveFormat = Timeseries
+  Save2DSignal = 3-D array (concatenate along third dimension)
+  FixptAsFi = on
+  SampleTime = -1
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter
+
+
+========================================
+BLOCK 51
+========================================
+Path:
+RC_model/RC-parallel/R2/To Workspace1
+
+Name: To Workspace1
+Block type: ToWorkspace
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  VariableName = V0
+  MaxDataPoints = inf
+  Decimation = 1
+  SaveFormat = Timeseries
+  Save2DSignal = 3-D array (concatenate along third dimension)
+  FixptAsFi = on
+  SampleTime = -1
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter1
+
+
+========================================
+BLOCK 52
+========================================
+Path:
+RC_model/RC-parallel/R2/To Workspace2
+
+Name: To Workspace2
+Block type: ToWorkspace
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  VariableName = V1
+  MaxDataPoints = inf
+  Decimation = 1
+  SaveFormat = Timeseries
+  Save2DSignal = 3-D array (concatenate along third dimension)
+  FixptAsFi = on
+  SampleTime = -1
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter2
+
+
+========================================
+BLOCK 53
+========================================
+Path:
+RC_model/RC-parallel/R2/To Workspace3
+
+Name: To Workspace3
+Block type: ToWorkspace
+Library source: No library link
+Link status: none
+
+PARAMETERS:
+  VariableName = V2
+  MaxDataPoints = inf
+  Decimation = 1
+  SaveFormat = Timeseries
+  Save2DSignal = 3-D array (concatenate along third dimension)
+  FixptAsFi = on
+  SampleTime = -1
+
+CONNECTIONS:
+  Source: RC_model/RC-parallel/R2/PS-Simulink
+Converter3
+
+
+========================================
+BLOCK 54
+========================================
+Path:
+RC_model/RC-parallel/R2/Voltage Sensor
+
+Name: Voltage Sensor
+Block type: SimscapeBlock
+Mask type: Voltage Sensor
+Library source:
+fl_lib/Electrical/Electrical Sensors/Voltage Sensor
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+  Destination: RC_model/RC-parallel/R2/R2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/R1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/R_s
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/C2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 55
+========================================
+Path:
+RC_model/RC-parallel/R2/Voltage Sensor1
+
+Name: Voltage Sensor1
+Block type: SimscapeBlock
+Mask type: Voltage Sensor
+Library source:
+fl_lib/Electrical/Electrical Sensors/Voltage Sensor
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+  Destination: RC_model/RC-parallel/R2/R2
+  Destination: RC_model/RC-parallel/R2/R1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/R_s
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter2
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/C2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 56
+========================================
+Path:
+RC_model/RC-parallel/R2/Voltage Sensor2
+
+Name: Voltage Sensor2
+Block type: SimscapeBlock
+Mask type: Voltage Sensor
+Library source:
+fl_lib/Electrical/Electrical Sensors/Voltage Sensor
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+  Destination: RC_model/RC-parallel/R2/R2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/R1
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/R_s
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/C2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor3
+
+
+========================================
+BLOCK 57
+========================================
+Path:
+RC_model/RC-parallel/R2/Voltage Sensor3
+
+Name: Voltage Sensor3
+Block type: SimscapeBlock
+Mask type: Voltage Sensor
+Library source:
+fl_lib/Electrical/Electrical Sensors/Voltage Sensor
+Link status: resolved
+
+PARAMETERS:
+
+CONNECTIONS:
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/R2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/R1
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/R_s
+  Destination: RC_model/RC-parallel/R2/PS-Simulink
+Converter3
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor1
+  Destination: RC_model/RC-parallel/R2/C1
+  Destination: RC_model/RC-parallel/R2/C0
+  Destination: RC_model/RC-parallel/R2/Electrical Reference
+  Destination: RC_model/RC-parallel/R2/Controlled Current
+Source
+  Destination: RC_model/RC-parallel/R2/Solver
+Configuration
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor2
+  Destination: RC_model/RC-parallel/R2/Voltage Sensor
+  Destination: RC_model/RC-parallel/R2/C2
+
+
+
+========================================
+MODEL SOLVER SETTINGS
+========================================
+
+Solver = VariableStepAuto
+SolverType = Variable-step
+StopTime = 76.1547
+MaxStep = 0.01
+MinStep = auto
+RelTol = 1e-3
+AbsTol = auto
